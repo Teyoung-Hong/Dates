@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* common */
+html {
+  font-size: 10px;
+}
+
+body {
+  margin-bottom: 20rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.is__selected {
+  color: green;
+}
+
+/* header */
+
+header {
+  display: flex;
+  height: 15rem;
+  padding: 3rem;
+  position: relative;
+}
+
+.title {
+  font-size: 10rem;
+  color: black;
+}
+
+.hamburger {
+  height: 100%;
+  width: 15rem;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+.hamburger__line {
+  height: 0.5rem;
+  width: 10rem;
+  background-color: black;
+  margin: 3rem auto;
+}
+
+.hamburger__line--top {
+}
+
+.hamburger__line--bottom {
+}
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+  height: 15rem;
+}
+
+.tabs__wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.tab__wrapper {
+  width: 33vw;
+  height: 10vw;
+  text-align: center;
+}
+
+.tab {
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: 3rem 3rem 4rem gray;
+  height: 100%;
+  width: 10vw;
+  text-align: center;
+  font-size: 10rem;
+  line-height: 10rem;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+
+.tab__icon {
+  color: black;
+}

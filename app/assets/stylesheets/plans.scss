@@ -1,0 +1,44 @@
+// Place all the styles related to the plans controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* sort */
+.sorts__wrapper {
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  overflow: scroll;
+}
+
+.sort {
+  font-size: 5rem;
+  margin: 0 5rem;
+  line-height: 15rem;
+}
+
+/* plan */
+.plan__wrapper {
+  width: 80%;
+  height: 50rem;
+  background: pink;
+  border-radius: 10rem;
+  box-shadow: 4rem 5rem 6rem grey;
+  margin: 10rem auto;
+  position: relative;
+}
+
+.plan__desc {
+  width: 100%;
+  height: 15rem;
+  background: black;
+  border-bottom-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.8;
+  color: white;
+}
+
+.plan__items {
+  margin: 0 1rem;
+}

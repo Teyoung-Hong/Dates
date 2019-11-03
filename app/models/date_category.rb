@@ -1,0 +1,2 @@
+class DateCategory < ApplicationRecord
+end

@@ -1,0 +1,27 @@
+
+<div class="sorts__wrapper">
+<!-- @categories.each do |c| -->
+<!-- カテゴリの数だけ繰り返し処理 -->
+    <p class="sort is__selected">Category</p>
+    <% 10.times do |f| %>
+        <p class="sort">Category</p>
+    <% end %>
+</div>
+<% 10.times do |f| %>
+<div class="plans__wrapper">
+    <div class="plan__wrapper">
+        <!-- Plan's bg would be here -->
+        <div class="plan__desc">
+        <% if @plans != nil %>
+            <p class="plan__name plan__items"><%= @plans.first.p_name %></p>
+            <p class="plan__date plan__items"><%= @plans.first.created_at %></p>
+            <p class="plan__couple plan__items"><%= current_user.f_name %><%= current_user.l_name %></p>
+        <% else %>
+            <p class="plan__name plan__items">plan_name</p>
+            <p class="plan__date plan__items">plan_date</p>
+            <p class="plan__couple plan__items">My Name</p>
+        <% end %>
+        </div>
+    </div>
+</div>
+<% end %>

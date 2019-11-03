@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dates</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="title">Dating</div>
+      <div class="hamburger">
+        <p class="hamburger__line hamburger__line--top"></p>
+        <p class="hamburger__line"></p>
+        <p class="hamburger__line hamburger__line--bottom"></p>
+      </div>
+    </header>
+    <%= yield %>
+    <footer>
+      <div class="tabs__wrapper">
+        <div class="tab__wrapper">
+          <div class="tab">
+            <!-- icon here -->＋
+          </div>
+        </div>
+        <div class="tab__wrapper">
+          <div class="tab">
+            <%= link_to '＋', new_plan_path, class: "tab__icon" %>
+          </div>
+        </div>
+        <div class="tab__wrapper">
+          <div class="tab">
+            <!-- icon here -->＋
+          </div>
+        </div>
+      </div>
+     </footer>
+  </body>
+</html>
